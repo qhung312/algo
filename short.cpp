@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+template<typename T> ostream& operator<<(ostream &os, const vector<T> &v) { os << '{'; string sep; for (const auto &x : v) os << sep << x, sep = ", "; return os << '}'; }
+template<typename T, size_t size> ostream& operator<<(ostream &os, const array<T, size> &arr) { os << '{'; string sep; for (const auto &x : arr) os << sep << x, sep = ", "; return os << '}'; }
+template<typename A, typename B> ostream& operator<<(ostream &os, const pair<A, B> &p) { return os << '(' << p.first << ", " << p.second << ')'; }
 #define rep(i,a,n) for (int i=a;i<int(n);i++)
 #define per(i,a,n) for (int i=int(n)-1;i>=0;i--)
 #define all(x) (x).begin(), (x).end()
@@ -11,7 +14,6 @@ using namespace std;
 #define mp make_pair
 #define SZ(x) ((int)(x).size())
 #define dbg(x) #x << ": " << x << " "
-
 typedef long long ll;
 typedef pair<int, int> pi;
 typedef vector<pi> vpi;
