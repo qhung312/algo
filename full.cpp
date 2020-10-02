@@ -9,8 +9,7 @@ ostream& operator<<(ostream &os, const vector<T> &v) {
 	os << "{";
 	bool f = true;
 	for (int i = 0; i < v.size(); i++) {
-		if (!f) os << ", ";
-		else f = false;
+		if (!f) os << ", "; else f = false;
 		os << v[i];
 	}
 	return os << "}";
