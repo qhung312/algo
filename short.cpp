@@ -6,6 +6,7 @@ template<typename A, typename B> ostream& operator<<(ostream &os, const pair<A, 
 string change_bit(int n, int base) { string s = ""; while (n > 0) { s += char(n % base) + '0'; n /= base; } reverse(s.begin(), s.end()); return s; }
 #define FOR(i,a,n) for (int i = a; i < int(n); i++)
 #define ROF(i,a,n) for (int i = int(n)-1; i >= 0; i--)
+#define trav(x, a) for (auto &x : a)
 #define all(x) (x).begin(), (x).end()
 #define rall(x) (x).rbegin(), (x).rend()
 #define fi first
