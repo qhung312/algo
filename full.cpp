@@ -9,6 +9,7 @@ string change_bit(int n, int base) { string s = ""; while (n > 0) { s += char(n 
 #define dbg(x) #x << ": " << (x) << " "
 
 int main() {
-	ios_base::sync_with_stdio(false), cin.tie(nullptr);
+	ios_base::sync_with_stdio(false);
+	cin.tie(0);
 	return 0;
 }
