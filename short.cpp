@@ -27,6 +27,6 @@ typedef vector<double> vd;
 typedef vector<pd> vpd;
 
 int main() {
-	ios_base::sync_with_stdio(false), cin.tie(nullptr);
+	ios_base::sync_with_stdio(false), cin.tie(0);
 	return 0;
 }
